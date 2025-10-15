@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Bio Luka coder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Фоновое видео -->
+<video id="bg-video" autoplay loop muted playsinline>
+    <source src="assets/video.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео
+</video>
+
+<!-- Музыка -->
+<audio id="bg-music" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудио
+</audio>
+
+<!-- Кнопка для включения музыки -->
+<button onclick="playMusic()" class="music-button">▶️ Включить музыку</button>
+
+<!-- Социальные сети -->
+<div class="social-bar">
+    <a href="tg://user?id=ваш_id" target="_blank"><i class="fab fa-telegram"></i></a>
+    <a href="https://discord.gg/ваш_сервер" target="_blank"><i class="fab fa-discord"></i></a>
+    <a href="https://github.com/ваш_профиль" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+
+<!-- Квадратная аватарка + текст -->
+<div class="avatar-section">
+    <img class="avatar" src="assets/avatar.jpg" alt="Avatar" onerror="handleAvatarError()">
+    <div class="avatar-text">
+        <p>Привет всем кто решил посмотреть это наверное по большое части это мой друзя и близкий но спасибо что посмотреть как все знают я кодер на языках python javascipt html Спасибо за внимания!</p>
+    </div>
+</div>
+
+<!-- Динамический контент -->
+<div id="dynamic-content">
+    <p>Загрузка контента...</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
